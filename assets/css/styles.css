@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+    outline: none;
+    list-style: none;
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 1.5rem;
+    background-color: #F3f3f3;
+    font-family: sans-serif;
+}
+
+address {
+    background-color: #CCC;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 5%;
+}
+
+address a {
+    text-transform: none;
+    color: #454545;
+}
+
+address i {
+    margin-right: 1rem;
+    color: #778;
+}
+
+#menu {
+    display: none;
+    padding: .8rem;
+    color: #778;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+header {
+    background-color: #FFF;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    position: relative;
+}
+
+.logo a {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: #778;
+    position: relative;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li a {
+    padding-block: .8rem;
+    padding-inline: 1rem;
+    color: #454545;
+    font-weight: 600;
+}
+
+ul li:hover a {
+    color: #778;
+}
+
+ul .buttons {
+    display: flex;
+    margin-left: 5rem;
+    gap: 2rem;
+}
+
+.buttons button {
+    padding-inline: 2rem;
+    padding-block: 5%;
+    flex: 1;
+    cursor: pointer;
+    border-radius: .4rem;
+    color: #FFF;
+}
+
+.buttons button:first-child {
+    background-color: #778;
+}
+
+.buttons button:first-child:hover,
+.buttons button:last-child:hover {
+    opacity: .8;
+}
+
+.buttons button:last-child {
+    background-color: #777;
+}
+
+section {
+    padding: 2rem 5%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #778;
+    border-radius: .5rem;
+    padding: 5rem;
+}
+
+.box-container .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 45rem;
+}
+
+.box-container .content span {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: -30px;
+}
+
+.box-container .content h1 {
+    font-size: 8rem;
+    margin: 0;
+}
+
+.box-container .content p {
+    font-size: 1.8rem;
+    line-height: 30px;
+    margin-bottom: 8rem;
+}
+
+.home img {
+    height: 70vh;
+    max-height: 100%;
+    flex: 1 1 45rem;
+    /* display: none; */
+}
+
+.buttonsHome {
+    display: flex;
+    gap: 2rem;
+}
+
+.buttonsHome button {
+    flex: 1;
+    cursor: pointer;
+    border-radius: .4rem;
+    padding-block: 2rem;
+    color: #FFF;
+}
+
+.buttonsHome button:first-child {
+    background-color: #454545;
+}
+
+.buttonsHome button:last-child {
+    background-color: #889;
+}
+
+.buttonsHome button:first-child:hover,
+.buttonsHome button:last-child:hover {
+    opacity: .8;
+}
+
+.patrons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patrons-container img {
+    max-height: 45rem;
+    height: 100%;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.middleServices {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+}
+
+.middleServices span {
+    text-align: center;
+    color: #778;
+    margin-bottom: 2rem;
+}
+
+.middleServices h2 {
+    font-size: 4rem;
+}
+
+.services .boxes {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    gap: 2rem;
+    align-self: flex-start;
+}
+
+.services .boxes .box {
+    background-color: #778;
+    padding: 6rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.services .boxes .box i {
+    font-size: 4rem;
+    color: #FFF;
+}
+
+.services .boxes .box h3 {
+    font-size: 2.8rem;
+}
+
+.services .boxes .box p {
+    line-height: 28px;
+    font-size: 1.8rem;
+}
+
+.services .boxes .box .fa-truck {
+    color: #291c60;
+}
+
+.services .boxes .box .fa-certificate {
+    color: #e26512;
+}
+
+.services .boxes .box .fa-arrow-rotate-left {
+    color: #0000ff;
+}
+
+.services .boxes .box:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+    #menu {
+        display: initial;
+    }
+    ul {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 110%;
+        right: 2rem;
+        background-color: #CCC;
+        width: 50vw;
+        height: 40vh;
+        border-radius: .4rem;
+        border-top: .4rem solid #778;
+        padding: 3rem;
+    }
+    ul.active {
+        display: none;
+    }
+    ul .buttons {
+        align-self: flex-start;
+        margin-left: 0;
+    }
+    .buttons button {
+        font-size: 1.2rem;
+    }
+    .patrons-container img {
+        max-height: 45rem;
+        height: 100%;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
