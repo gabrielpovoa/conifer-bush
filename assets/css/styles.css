@@ -194,14 +194,8 @@ section {
 
 .patrons-container img {
     max-height: 45rem;
+    width: 80rem;
     height: 100%;
-}
-
-.services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5rem;
 }
 
 .middleServices {
@@ -218,6 +212,7 @@ section {
 
 .middleServices h2 {
     font-size: 4rem;
+    margin: auto;
 }
 
 .services .boxes {
@@ -267,7 +262,12 @@ section {
     opacity: 0.8;
 }
 
+.red {
+    background-color: #889;
+}
+
 .details .container {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -279,10 +279,10 @@ section {
 }
 
 .details .container .content {
-    margin-left: 5rem;
-    flex: 1 1 40rem;
+    flex: 1 1 45rem;
     display: flex;
     flex-direction: column;
+    margin-inline: 5rem;
     gap: 2rem;
 }
 
@@ -338,8 +338,6 @@ section {
         font-size: 1.2rem;
     }
     .patrons-container img {
-        max-height: 45rem;
-        height: 100%;
         display: none;
     }
     .home img {
@@ -351,18 +349,22 @@ section {
     }
     .details .container .content {
         margin-top: 10rem;
+        margin-left: 0;
     }
     .details .container .content p {
         line-height: 30px;
     }
     .details .container .image img {
         height: 49vh;
-        margin-left: 0;
+        margin-inline: 0;
     }
 }
 
 @media screen and (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+    .patrons-container img {
+        display: none;
     }
 }
