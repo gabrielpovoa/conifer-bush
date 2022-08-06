@@ -222,9 +222,10 @@ section {
 
 .services .boxes {
     display: grid;
-    grid-template-columns: repeat(3, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
-    align-self: flex-start;
+    align-items: flex-start;
+    place-items: center;
 }
 
 .services .boxes .box {
@@ -287,9 +288,10 @@ section {
         border-radius: .4rem;
         border-top: .4rem solid #778;
         padding: 3rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
     ul.active {
-        display: none;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     ul .buttons {
         align-self: flex-start;
@@ -302,6 +304,10 @@ section {
         max-height: 45rem;
         height: 100%;
         display: none;
+    }
+    .home img {
+        height: 45vh;
+        margin-top: 8rem;
     }
 }
 
