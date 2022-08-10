@@ -304,6 +304,89 @@ section {
     color: #FFF;
 }
 
+.slider-testimonials {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+}
+
+.slider-testimonials .middleServices {
+    width: 60rem;
+    max-width: 100%;
+}
+
+.slider-testimonials .middleServices span {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 1.2rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    width: 32rem;
+    align-items: center;
+    border-radius: .5rem;
+}
+
+.testimonioalBox {
+    position: relative;
+    width: 100%;
+    padding: 4rem;
+    padding-top: 9rem;
+    color: #778;
+}
+
+.testimonioalBox .details {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.testimonioalBox .details .imgBx {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1rem;
+    background-color: #291c60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.testimonioalBox .details .imgBx p {
+    font-size: 4rem;
+}
+
+.testimonioalBox .details h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1.3;
+    color: #454545;
+}
+
+.testimonioalBox .details h3 span {
+    font-size: 1.2rem;
+    color: #291c60;
+}
+
 @media screen and (max-width: 768px) {
     html {
         font-size: 55%;
@@ -358,6 +441,32 @@ section {
         height: 49vh;
         margin-inline: 0;
     }
+    .testimonioalBox {
+        padding: 3rem;
+        padding-top: 6rem;
+    }
+    .testimonioalBox .details .imgBx {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 1rem;
+        background-color: #291c60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .testimonioalBox .details .imgBx p {
+        font-size: 2rem;
+    }
+    .testimonioalBox .content p {
+        font-size: 1.8rem;
+    }
+    .slider-testimonials .middleServices {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 450px) {
@@ -366,5 +475,28 @@ section {
     }
     .patrons-container img {
         display: none;
+    }
+    .testimonioalBox {
+        padding: 3rem 4px;
+        width: 12rem;
+    }
+    .testimonioalBox .details .imgBx {
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 1rem;
+        background-color: #291c60;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    .testimonioalBox .details .imgBx p {
+        font-size: 1.2rem;
+    }
+    .testimonioalBox .content p {
+        font-size: 1.5rem;
     }
 }
