@@ -334,18 +334,18 @@ section {
 
 .swiper-slide {
     /* text-align: center; */
-    font-size: 18px;
+    font-size: 1.8rem;
     background: #fff;
     display: flex;
     justify-content: center;
-    width: 32rem;
+    width: 40rem;
     align-items: center;
     border-radius: .5rem;
 }
 
 .testimonioalBox {
     position: relative;
-    width: 100%;
+    width: 600px;
     padding: 4rem;
     padding-top: 9rem;
     color: #778;
@@ -496,7 +496,13 @@ section {
     .testimonioalBox .details .imgBx p {
         font-size: 1.2rem;
     }
-    .testimonioalBox .content p {
+    .testimonioalBox .content {
         font-size: 1.5rem;
+    }
+    .swiper-slide {
+        width: 400px;
+        margin: 0 auto;
+        /* padding-block: 6rem; */
+        padding-inline: 12rem;
     }
 }
