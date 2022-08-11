@@ -501,8 +501,8 @@ section {
     }
     .swiper-slide {
         width: 400px;
+        height: 400px;
         margin: 0 auto;
-        /* padding-block: 6rem; */
         padding-inline: 12rem;
     }
 }
